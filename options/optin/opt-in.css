@@ -1,0 +1,23 @@
+/* Additional Opt-in Styles */
+
+.opt-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(12, 16, 26, 0.8);
+  border: 1px solid var(--card-border);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.opt-status-pill strong {
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.opt-status-pill strong:has(:contains('YES')),
+.opt-status-pill strong:is([id*="enabled"]:not(:empty)) {
+  color: #34d399;
+}

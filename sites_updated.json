@@ -1,0 +1,57 @@
+{
+  "Berliner Zeitung": {
+    "domain": "berliner-zeitung.de",
+    "allow_cookies": 1,
+    "useragent": "googlebot",
+    "upd_version": "4.4.1.7"
+  },
+  "Der Spiegel": {
+    "domain": "spiegel.de",
+    "allow_cookies": 1,
+    "cs_dompurify": 1,
+    "upd_version": "4.4.1.7"
+  },
+  "Libération.fr": {
+    "domain": "liberation.fr",
+    "allow_cookies": 1,
+    "cs_dompurify": 1,
+    "cs_param": {"paywall_sel": "div#article-body-paywall"},
+    "cs_code": "[{\"add_style\":\"div.kxhprn {display: none !important}\"}]",
+    "upd_version": "4.4.2.4"
+  },
+  "Interesting Engineering": {
+    "domain": "interestingengineering.com",
+    "allow_cookies": 1,
+    "cs_dompurify": 1,
+    "cs_code": "[{\"cond\":\"div#taboola-article-content\", \"rm_attrib\":\"id\"}]",
+    "upd_version_min": "4.4.0.6",
+    "upd_version": "4.4.2.4"
+  },
+  "New Scientist": {
+    "domain": "newscientist.com",
+    "allow_cookies": 1,
+    "block_regex": "(\\.newscientist\\.com\\/api\\/tinypass\\.min\\.js|appan\\.newscientist\\.com\\/pugpig-websmartbanner\\.js)",
+    "cs_all_frames": 1,
+    "cs_dompurify": 1,
+    "upd_version2": "4.4.2.6"
+  },
+  "Newsday": {
+    "domain": "newsday.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.newsday\\.com\\/nd-user\\/nd_user_ace\\.bundle\\.js",
+    "cs_code": "[{\"cond\":\"html[class]\", \"rm_attrib\":\"class\"}]",
+    "upd_version": "4.4.1.5"
+  },
+  "Ostdeutsche Allgemeine": {
+    "domain": "ostdeutscheallgemeine.com",
+    "allow_cookies": 1,
+    "useragent": "googlebot",
+    "upd_version": "4.4.1.7"
+  },
+  "Telegram.hr": {
+    "domain": "telegram.hr",
+    "allow_cookies": 1,
+    "block_js_inline": "\\.telegram\\.hr\\/.+\\/(\\w+-){3,}",
+    "upd_version": "4.4.1.8"
+  }
+}
